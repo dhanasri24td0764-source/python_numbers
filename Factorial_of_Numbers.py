@@ -3,5 +3,6 @@ def factorial(n):
     for i in range(1, n + 1):
         fact = fact * i
     return fact
-n = 5
-print("Factorial =", factorial(n))
+
+num = int(input("Enter a number: "))
+print("Factorial =", factorial(num))
