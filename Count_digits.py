@@ -1,8 +1,11 @@
 def count_digits(n):
     count = 0
+
     while n != 0:
         n = n // 10
-        count += 1
+        count = count + 1
+
     return count
-n = 12345
-print("Number of digits =", count_digits(n))
+
+num = int(input("Enter a number: "))
+print("Number of digits =", count_digits(num))
