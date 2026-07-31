@@ -1,9 +1,12 @@
 def swap(a, b):
-    a = a + b
-    b = a - b
-    a = a - b
-    print("a =", a)
-    print("b =", b)
-a = 10
-b = 20
-swap(a, b)
+    a, b = b, a
+    return a, b
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+a, b = swap(a, b)
+
+print("After swapping:")
+print("a =", a)
+print("b =", b)
